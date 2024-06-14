@@ -16,11 +16,11 @@ Chapter after chapter, you'll build, containerize, and deploy cloud native appli
     * OpenJDK: [Eclipse Temurin](https://adoptium.net)
     * GraalVM: [GraalVM](https://www.graalvm.org)
     * JDK Management: [SDKMAN](https://sdkman.io)
-* Docker 24+
+* Docker 26+
     * [Docker for Linux](https://docs.docker.com/engine/install/ubuntu/)
     * [Docker Desktop for Mac](https://www.docker.com/products/docker-desktop)
     * [Docker Desktop for Windows](https://www.docker.com/products/docker-desktop)
-* Kubernetes 1.28+
+* Kubernetes 1.30+
     * [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
     * [minikube](https://minikube.sigs.k8s.io/docs/)
 * Other
@@ -37,18 +37,22 @@ Gradle | Maven
 `./gradlew test` | `./mvnw test`
 `./gradlew bootJar` | `./mvnw spring-boot:repackage`
 `./gradlew bootRun` | `./mvnw spring-boot:run`
-`./gradlew bootBuildImage` | `./mvnw spring-boot:build-image`
+`./gradlew bootBuildImage` | `./mvnw spring-boot:build-image -DskipTests`
 
 ## Guides, Tools and Tips
 
 * [Configuring IntelliJ IDEA](https://github.com/ThomasVitale/cloud-native-spring-in-action/tree/main/Guides/configuring-intellij-idea.md)
 * [Configuring Visual Studio Code](https://github.com/ThomasVitale/cloud-native-spring-in-action/tree/main/Guides/configuring-visual-studio-code.md)
+* [Knative Platform Cloud Installation](https://github.com/ThomasVitale/cloud-native-spring-in-action/tree/main/Guides/knative-platform-cloud-installation.md)
 * [Minikube configuration behind a proxy](https://github.com/ThomasVitale/cloud-native-spring-in-action/tree/main/Guides/minikube-configuration-behind-a-proxy.md)
 * [Observability setup on Kubernetes](https://github.com/ThomasVitale/cloud-native-spring-in-action/tree/main/Guides/grafana-observability-stack)
 * [Replacing Kubeval with Kubeconform](https://github.com/ThomasVitale/cloud-native-spring-in-action/tree/main/Guides/replacing-kubeval-with-kubeconform.md)
+* [Replacing Octant](https://github.com/ThomasVitale/cloud-native-spring-in-action/tree/main/Guides/replacing-octant.md)
 * [Setting up a Kubernetes cluster for Polar Bookshop on Azure](#)
 * [Setting up a Kubernetes cluster for Polar Bookshop on DigitalOcean](#)
+* [Testing RabbitMQ with Testcontainers](https://github.com/ThomasVitale/cloud-native-spring-in-action/tree/main/Guides/testing-rabbitmq-with-testcontainers.md)
 * [Working with macOS on Apple Silicon](https://github.com/ThomasVitale/cloud-native-spring-in-action/tree/main/Guides/working-with-macos-on-apple-silicon.md)
+* [Working with macOS on Intel](https://github.com/ThomasVitale/cloud-native-spring-in-action/tree/main/Guides/working-with-macos-on-intel.md)
 * [Working with Windows](https://github.com/ThomasVitale/cloud-native-spring-in-action/tree/main/Guides/working-with-windows.md)
 
 ## Source Code by Chapter

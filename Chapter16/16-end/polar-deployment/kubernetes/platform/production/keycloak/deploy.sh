@@ -6,7 +6,7 @@ echo "\n🗝️  Keycloak deployment started.\n"
 
 echo "📦 Installing Keycloak..."
 
-clientSecret=$(echo $ random | openssl md5 | Head -c 20)
+clientSecret=$(echo $ random | openssl md5 | head -c 20)
 
 kubectl apply -f resources/namespace.yml
 sed "s/polar-keycloak-secret/$clientSecret/" resources/keycloak-config.yml | kubectl apply -f -
@@ -17,7 +17,7 @@ helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 helm upgrade --install polar-keycloak bitnami/keycloak \
   --values values.yml \
-  --namespace keycloak-system --version 17.3.0
+  --namespace keycloak-system --version 21.4.1
 
 echo "\n⌛ Waiting for Keycloak to be deployed..."
 
